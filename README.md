@@ -2,20 +2,11 @@
 
 # ロボットシステム学
 ## robsys2020 課題2 
-## <共同製作者>
-- CIT 高見俊介
 ## 課題2 <内容>
 - <内容>
-  - 
+  - 一人でもあっち向いてホイを遊べる
 - <アピールポイント>
-  - 円周率を9桁まで2進数で表現する
-
-## 回路
-![kairo](https://user-images.githubusercontent.com/75356150/101359530-bfb36680-38df-11eb-93b7-e4adc06bda50.jpg)
-
-LEDはRaspberry PiのGPIO[22, 23, 24, 25]及びGNDに接続  
-GPIOに対応するLEDはブレッドボードの左から順にGPIO[22, 23, 24, 25]となっている  
-ブレッドボードのLEDは左から8の位, 4の位, 2の位, 1の位の値と見なす
+  - 相手が煽ってこないため, 精神を安定した状態であっち向いてホイの練習ができる
   
 ## <実行環境>
 Raspberry Pi及びubuntu(desktop,serverとはない)が必要
@@ -23,15 +14,14 @@ Raspberry Pi及びubuntu(desktop,serverとはない)が必要
 |||
 |:---|---:|
 |機種|Raspberry Pi Model 4|
+|ROS|ROS melodic|
 |OS|ubuntu mate 20.04|
 
 ## <動作手順>
-- ビルド
-ソースコード(.c)が存在するフォルダへ移動
-次のコマンドを使用し, ビルド
-※一度した場合にはビルドした場合には後述するデバイスドライバの削除を実行
+- gitcloneする
+
 ```bash:build
-$make 
+$git clone 
 $sudo insmod myled.ko
 $sudo chmod 666 /dev/myled0
 ```
