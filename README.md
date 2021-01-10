@@ -21,9 +21,7 @@ Raspberry Pi及びubuntu(desktop,serverとはない)が必要
 - gitcloneする
 
 ```bash:build
-$git clone 
-$sudo insmod myled.ko
-$sudo chmod 666 /dev/myled0
+$git clone https://github.com/saitoCIT/ROS.git
 ```
 - 動作
 echo x > /dev/myled0でxの値の桁数の数値を2進数で表示する
