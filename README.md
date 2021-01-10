@@ -27,20 +27,22 @@ $git clone https://github.com/saitoCIT/ROS.git
 - 端末1でroscoreを立ち上げる
 
 ```bash:move
-$echo 1 > /dev/myled0
+$roscore
 ```
-と入力すると, GPIO[25, 24]に接続されたLEDが点灯する  
-このとき, ブレッドボードの2の位と1の位が点灯するため, このブレッドボードは3を表示していることがわかる
+
+- 端末2, 端末3をscriptsに移動する
+```bash:move
+$cd mypkg/scripts
+```
+- 端末2で以下のコマンドを実行
 
 ```bash:move
-$echo 2 > /dev/myled0
+$rosrun mypkg user.py
 ```
-と入力すると, GPIO[25]に接続されたLEDが点灯する  
-このとき, ブレッドボードの1の位が点灯するため, このブレッドボードは1を表示していることがわかる
 
-- デバイスドライバの削除
-```bash:delate device driver
-$sudo rmmod myled
+- 端末3で以下のコマンドを実行
+```bash:move
+$rosrun mypkg enemy.py
 ```
 
 ## <共同作成者との共通点/相違点>
