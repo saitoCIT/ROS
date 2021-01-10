@@ -44,13 +44,5 @@ $rosrun mypkg user.py
 ```bash:move
 $rosrun mypkg enemy.py
 ```
-
-## <共同作成者との共通点/相違点>
-- 共通点  
-LEDを点灯させる部分をfor文で回す
-
-- 相違点  
-LEDのON/OFFで2進数表現し, ON/OFFの書き込みの部分で円周率に対応させた
-
-# 参考資料
-https://github.com/ryuichiueda/robosys_device_drivers
+端末2で0~3までの数字を入力し, 方向を決定  
+端末3で結果が表示される
