@@ -23,10 +23,8 @@ Raspberry Pi及びubuntu(desktop,serverとはない)が必要
 ```bash:build
 $git clone https://github.com/saitoCIT/ROS.git
 ```
-- 動作
-echo x > /dev/myled0でxの値の桁数の数値を2進数で表示する
-なお、キャラクタで数値を取っているため,　0 <= x < 10の整数となっている  
-例えば, 
+
+- 端末1でroscoreを立ち上げる
 
 ```bash:move
 $echo 1 > /dev/myled0
